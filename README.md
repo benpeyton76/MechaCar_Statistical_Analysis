@@ -30,11 +30,68 @@
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
+### Total Summary 
 <p align="center">
    <img width="499" alt="Deliverable 2a" src="https://user-images.githubusercontent.com/87077325/147291162-e0014433-c8ca-48f0-a784-c5801c3edec4.png">
 </p>
 
-The variance of PSI (Var_PSI) column of the total_summary visualization, shows that the suspension coils' design specifications have been met.
+The variance of PSI (Var_PSI) column of the total_summary dataframes, shows that the suspension coils' design specifications (maximum 100psi) have been met. Total  variance of the manufactoring lot is 62.2936. However:
+
+### Lot Summary
+<p align="center">
+  <img width="669" alt="Deliverable 2b" src="https://user-images.githubusercontent.com/87077325/147291923-ebd287e6-62f9-43c2-8003-d8f47d9bc1ae.png">
+</p>
+
+Based on the lot_summary dataframe, individual lots 1 and 2 meet specifications with their variance being 0.9796 and 7.469 respectively. Lot 3 did not because the variance = 170.286.
+
+
+## Deliverable 3: T-Tests on Suspension Coils
+
+### T-Test for All Lots
+<p align="center">
+ <img width="534" alt="Deliverable 3a" src="https://user-images.githubusercontent.com/87077325/147293032-2638358c-5e0e-40cb-a5be-061c362f1ffb.png">
+</p>
+
+The t-test for all lots population mean (mu) = 1500. P-value is 1.0 which is greater than 0.05. The mean falls within the 95 percentile and its distribution is normal.
+
+### T-Test for Individual Lots 1-3
+<p align="center">
+ <img width="508" alt="Deliverable 3b" src="https://user-images.githubusercontent.com/87077325/147293639-d44b2005-3d8e-4cdf-9bfc-f21ef4da8c1b.png">
+</p>
+
+Lot 1, with mu = 1500 and p-value = 1.0, falls within the 95 percentile and has normal distribution.
+
+Lot 2, with mu = 1500 and p-value = 0.6072, falls within the 95 percentile and has normal distribution.
+
+Lot 3, with mu = 1500 and p-value = 0.04168, falls within the 95 perentile, however since 0.04168<0.05, it does not have normal distribution.
+
+All lots, and lots 1 and 2 both show normal distribution and falls within the 95 percentile. Because of their simularities in mean (Lot 1 = 1500, Lot 2 = 1500.2) there is not enough evidence to reject the null hypothesis.
+
+
+## Deliverable 4: Study Design: MechaCar vs Competition
+
+Other metrics can be considered when stacking MechaCar against its competitors. Variables such as maintenace cost, highway fuel efficiency, engine size, model, and horsepower. 
+
+1. **What metric or metrics are you going to test?**
+
+   Because general costs of owning and maintaning a car is important to a potential client, using the maintenance cost, highway fuel efficiency, engine size, MPG      and horsepower metrics would be ideal to use. 
+   
+2. **What is the null hypothesis or alternative hypothesis?**
+
+   The null hypothesis is that the mean of general costs of car ownership has an annual cost of 500 per year. The alternative hypothesis is that general costs of      car ownershipt does not equal 500 per year. Based on MechaCar and its competition.
+   
+3. **What statistical test would you use to test the hypothesis? And why?**
+
+   A multipule linear regression statistial summary would show the metrics would affect total annual cost of owning a MechaCar vehicle vs the competitors.
+   
+4. **What data is needed to run the statistical test?**
+
+   Data from the tested metrics would be needed for all vehicles that were included in the study.
+   
+
+
+
+
 
 
 
