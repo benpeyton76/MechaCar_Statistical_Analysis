@@ -47,14 +47,14 @@ Based on the lot_summary dataframe, individual lots 1 and 2 meet specifications 
 
 ## ***T-Tests on Suspension Coils:***
 
-### ***T-Test for All Lots***
+### ***T-Test for All Lots:***
 <p align="center">
  <img width="534" alt="Deliverable 3a" src="https://user-images.githubusercontent.com/87077325/147293032-2638358c-5e0e-40cb-a5be-061c362f1ffb.png">
 </p>
 
 The t-test for all lots population mean (mu) = 1500. P-value is 1.0 which is greater than 0.05. The mean falls within the 95 percentile and its distribution is normal.
 
-### ***T-Test for Individual Lots 1-3***
+### ***T-Test for Individual Lots 1-3:***
 <p align="center">
  <img width="508" alt="Deliverable 3b" src="https://user-images.githubusercontent.com/87077325/147293639-d44b2005-3d8e-4cdf-9bfc-f21ef4da8c1b.png">
 </p>
